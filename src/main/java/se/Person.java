@@ -19,9 +19,11 @@ public class Person implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	
 	private int id;
-
 	private String name;
+	private int phone;
+	private String email;
 
 	public Person() {
 	}
@@ -42,4 +44,19 @@ public class Person implements Serializable {
 		this.name = name;
 	}
 
+	public int getPhone(){
+		return this.phone;
+	}
+	
+	public void setPhone(int phone){
+		this.phone = phone;
+	}
+	
+	public int getEmail(){
+		return this.email;
+	}
+	
+	public void setEmail(String email){
+		this.phone = email;
+	}
 }
